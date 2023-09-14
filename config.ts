@@ -2,8 +2,8 @@ import { Configuration, LogLevel } from "@azure/msal-browser";
 
 export const msalConfig: Configuration = {
   auth: {
-    clientId: process.env.clientId!,
-    authority: `https://login.microsoftonline.com/${process.env.tenantId}`,
+    clientId: process.env.NEXT_PUBLIC_MSAL_CLIENT_ID!,
+    authority: `https://login.microsoftonline.com/${process.env.NEXT_PUBLIC_MSAL_TENANT_ID}`,
     redirectUri: "/", // You must register this URI on Azure Portal/App Registration. Defaults to window.location.origin
     postLogoutRedirectUri: "/", // Indicates the page to navigate after logout.
     clientCapabilities: ["CP1"], // this lets the resource owner know that this client is capable of handling claims challenge.
