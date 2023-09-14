@@ -1,4 +1,4 @@
-import { scopes } from "@/msal.config";
+import { scopes } from "@/config";
 import {
   useMsal,
   AuthenticatedTemplate,

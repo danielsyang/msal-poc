@@ -1,5 +1,5 @@
 import RouteGuard from "@/components/routeGuard";
-import { appRoles } from "@/msal.config";
+import { appRoles } from "@/config";
 
 export default function Sales() {
   return (

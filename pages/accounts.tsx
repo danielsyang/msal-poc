@@ -1,6 +1,6 @@
 import RouteGuard from "@/components/routeGuard";
 import { useFetchWithMsal } from "@/hooks/useFetchWithMsal";
-import { appRoles } from "@/msal.config";
+import { appRoles } from "@/config";
 import { useEffect, useState } from "react";
 
 const roles = [appRoles.Admin, appRoles.Developer];

@@ -1,4 +1,4 @@
-import { scopes } from "@/msal.config";
+import { scopes } from "@/config";
 import { InteractionType, PopupRequest } from "@azure/msal-browser";
 import { useAccount, useMsal, useMsalAuthentication } from "@azure/msal-react";
 import { useCallback, useState } from "react";
