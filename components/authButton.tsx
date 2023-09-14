@@ -11,7 +11,7 @@ export default function AuthButton() {
   const handleLoginPopup = () => {
     instance
       .loginPopup({
-        // redirectUri: "/redirect", // redirects the top level app after logout
+        redirectUri: "/redirect", // redirects the top level app after logout
         scopes,
       })
       .catch((error) => console.log(error));
