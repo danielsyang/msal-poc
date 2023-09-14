@@ -45,6 +45,6 @@ export const appRoles = {
 };
 
 export const scopes = [
-  "api://e32947c1-1002-4ada-9a60-6f9264a4672b/access_via_role_or_group_assignments",
+  `api://${process.env.NEXT_PUBLIC_MSAL_CLIENT_ID}/access_via_role_or_group_assignments`,
   "User.Read",
 ];
